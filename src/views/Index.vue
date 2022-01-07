@@ -4,7 +4,7 @@
     
     <section class="section">
         <div class="section__cont">
-            <BaseShadowImg img="coverImg.jpg" desc="My foto" h="300" w="200" />
+            <BaseShadowImg img="coverImg.jpg" desc="My foto" h=300 w=200 />
         </div>
         <div class="section__cont section__cont--text">
             <h1 class="section__cont__title">About Me</h1>

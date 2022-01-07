@@ -7,7 +7,7 @@
       <div class="contacts__section">
 
         <div class="contacts__section__cont">
-          <BaseShadowImg img="mole.jpg" desc="Immagine Mole Antonelliana" h="300" w="200" />
+          <BaseShadowImg img="mole.jpg" desc="Immagine Mole Antonelliana" h=300 w=200 />
         </div>
         
         <hr class="contacts__section__line">

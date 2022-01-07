@@ -20,12 +20,8 @@ export default {
   created() {
     const config = require('./data.json').config;
 
-    const img = document.querySelector('head link[rel="icon"]');
-    const title = document.querySelector('head title');
-
-    img.setAttribute('href', config.imgSrc);
+    const title = document.querySelector('head title'); 
     title.textContent = config.title;
-  
   },
 }
 </script>
