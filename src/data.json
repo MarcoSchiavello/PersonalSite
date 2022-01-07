@@ -1,0 +1,32 @@
+{
+    "config": {
+        "title": "Marco Schiavello",
+        "imgSrc": "favicon.ico"
+    },
+
+    "techs": [
+        {
+            "name": "Node.js",
+            "logo": "node.png",
+            "checked": true
+        },
+        {
+            "name": "Typescript",
+            "logo": "ts.png",
+            "checked": false
+        }
+    ],
+
+    "projects": [
+        {
+            "name": "Gusci",
+            "desc": "fake eCommerce made for fun with PHP and MySql",
+            "github": "https://github.com/MarcoSchiavello/Gusci"
+        },
+        {
+            "name": "Trackstry",
+            "desc": "spotify clone  made with Node.js and Express.js",
+            "github": "https://github.com/MarcoSchiavello/Trackstry"
+        }
+    ]
+}

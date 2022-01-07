@@ -1,0 +1,9 @@
+#app.dark-theme {
+    --secondary: var(--dark-secondary);
+    --clr-background: var(--clr-dark-background);
+}
+
+#app.white-theme {
+    --secondary: #000000;
+    --clr-background: #FFFFFF;
+}

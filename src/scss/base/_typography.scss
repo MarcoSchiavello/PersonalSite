@@ -1,0 +1,21 @@
+@import '../abstracts/variables';
+
+@import url('https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed&family=Share+Tech+Mono&display=swap');
+body {
+  font-family: 'Share Tech Mono', monospace;
+}
+
+h1 {
+  font-weight: 300;
+  color: var(--primary);
+}
+
+h2,h3,h4,h5,h6 {
+  font-weight: 300;
+  color: var(--secondary);
+}
+
+p {
+  font-family: 'Saira Semi Condensed', sans-serif;
+  color: var(--secondary);
+}

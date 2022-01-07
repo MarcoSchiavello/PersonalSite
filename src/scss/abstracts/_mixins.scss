@@ -1,0 +1,30 @@
+@mixin flex($align-items: null, $justify-content: null, $direction: null, $gap: null) {
+    display: flex;
+    align-items: $align-items;
+    justify-content: $justify-content;
+    flex-direction: $direction;
+    gap: $gap;
+}
+
+@mixin alignCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin position($position: relative, $top: null, $right: null, $bottom: null, $left: null) {
+    position: $position;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+@mixin dimension($width, $height: null) {
+    width: $width;
+    height: $height;
+}
+
+@mixin boxShadow($x: 5px, $y: 6px, $blur: 20px, $dim: -12px) {
+    box-shadow: $x $y $blur $dim;
+}

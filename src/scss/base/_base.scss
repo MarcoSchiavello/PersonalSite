@@ -1,0 +1,23 @@
+@import '../abstracts/variables';
+
+html,body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--clr-background);
+
+}
+
+#app { 
+    width: 100%;
+    background-color: var(--clr-background);
+}
+
+main {
+    min-height: 750px;
+}
+
+a{
+    color: var(--secondary);
+    text-decoration: none;
+}
