@@ -96,6 +96,19 @@ export default {
       border: none;
       margin: 0 6rem;
     }
+
+    @include mq('smallMedium') {
+      & {
+        height: max-content;
+        flex-direction: column;
+        margin: 2rem 0;
+      }
+
+      &__line {
+        @include dimension(5rem, 0.4rem);
+        margin: 1.3rem 0;
+      }
+    }
   }
 }
 
@@ -110,4 +123,5 @@ export default {
     margin: 0 auto;
   }
 }
+
 </style>

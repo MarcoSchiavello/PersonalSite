@@ -1,3 +1,10 @@
+$breakpoints: (
+    'large': '1400px',
+    'medium': '950px',
+    'smallMedium': '800px',
+    'small': '750px',
+);
+
 @mixin flex($align-items: null, $justify-content: null, $direction: null, $gap: null) {
     display: flex;
     align-items: $align-items;
@@ -28,3 +35,9 @@
 @mixin boxShadow($x: 5px, $y: 6px, $blur: 20px, $dim: -12px) {
     box-shadow: $x $y $blur $dim;
 }
+
+@mixin mq($size) {
+    @media (max-width: map-get($breakpoints, $size)) {
+        @content;
+    }
+} 

@@ -69,5 +69,15 @@ export default {
             }
         }
     }
+
+    @include mq('medium') {
+        & {
+            flex-direction: column;
+        }
+
+        &__links {
+            top: 1.7rem;
+        }
+    }
 }
 </style>

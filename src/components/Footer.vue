@@ -30,7 +30,7 @@
         <hr class="footer__line">
 
         <p class="footer__copyright">
-            Copyright © 2021 All Rights Reserved by Marco Schiavello.
+            <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC by Marco Schiavello</a>.
         </p>
     </footer>
 </template>
@@ -74,6 +74,7 @@ export default {
             }
             
         }
+
     }
 
     &__line { 
@@ -82,6 +83,22 @@ export default {
 
     &__copyright {
         font-size: 0.8em;
+    }
+
+    @include mq('medium') {
+        & {
+            height: max-content;
+        }
+
+        &__col-cont {
+            flex-direction: column;
+            align-items: center; 
+            gap: 1.2rem;
+        }
+
+        &__col-cont__col {
+            align-items: center;
+        }
     }
 }
 </style>

@@ -76,6 +76,19 @@ export default {
       width: 80%;
     }
   }
+
+  @include mq('small') {
+      & {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      &__cont {
+        align-items: center;
+        width: 100%;
+      }
+  }
+
 }
 
 .techs {

@@ -53,6 +53,7 @@ export default {
         padding: 0.2rem;
         border-radius: 100%;
         background-color: var(--secondary);
+        outline: none;
         
         &__moon {
             @include dimension(1.5rem);
