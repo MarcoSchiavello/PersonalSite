@@ -26,6 +26,7 @@ export default {
     @include flex(center, null, row, 0.7rem);
     @include boxShadow;
     width: 93%;
+    min-height: 3.9rem;
     padding: 0.5rem 0.8rem;
     border-radius: 0.4rem;
     box-sizing: border-box;

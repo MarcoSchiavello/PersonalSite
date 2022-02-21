@@ -5,9 +5,9 @@
             <div class="footer__col-cont__col">
                 <h1 class="footer__col-cont__col__title">ABOUT</h1>
                 <p class="footer__col-cont__col__text footer__col-cont__col__text--ch">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in orum.
+                    This site have the purpose to show my interests and projects along my learning path 
+                    and, hopefully, career as a web developer.
+                    This site was made with two technologies that were new for me, Vue.js and Scss.
                 </p>
             </div>
 

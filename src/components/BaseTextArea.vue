@@ -1,6 +1,6 @@
 <template>
     <div class="input-text" :style="cssProps">
-        <textarea class="input-text__input" :name="label" v-model="message" required />
+        <textarea class="input-text__input" :name="label" v-model="model" required />
         <label class="input-text__label" :for="label">{{ label }}</label>
     </div>
 </template>
@@ -9,6 +9,7 @@
 export default {
     name: "BaseTextArea",
     props: {
+        modelValue: String,
         label: String,
         w: String,
         h: String,
@@ -18,6 +19,14 @@ export default {
             return {
                 '--width': this.w,
                 '--height': this.h,
+            }
+        },
+        model: {
+            get () {
+                return this.modelValue
+            },
+            set (newValue) {
+                this.$emit('update:modelValue', newValue);
             }
         }
     },

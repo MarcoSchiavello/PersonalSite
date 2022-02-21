@@ -1,6 +1,6 @@
 <template>
     <div class="input-text" :style="cssProps">
-        <input class="input-text__input" type="text" :name="label" required>
+        <input class="input-text__input" type="text" :name="label" v-model="model" required>
         <label class="input-text__label" :for="label">{{ label }}</label>
     </div>
 </template>
@@ -9,6 +9,7 @@
 export default {
     name: "BaseInputText",
     props: {
+        modelValue: String,
         label: String,
         w: String,
     },
@@ -16,6 +17,14 @@ export default {
         cssProps() {
             return {
                 '--width': this.w,
+            }
+        },
+        model: {
+            get () {
+                return this.modelValue
+            },
+            set (newValue) {
+                this.$emit('update:modelValue', newValue);
             }
         }
     },

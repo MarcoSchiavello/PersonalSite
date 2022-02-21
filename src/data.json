@@ -10,8 +10,93 @@
             "checked": true
         },
         {
+            "name": "Express.js",
+            "logo": "express.png",
+            "checked": true
+        },
+        {
+            "name": "Git",
+            "logo": "git.png",
+            "checked": true
+        },
+        {
+            "name": "PHP",
+            "logo": "php.png",
+            "checked": true
+        },
+        {
+            "name": "JavaScript",
+            "logo": "javascript.png",
+            "checked": true
+        },
+        {
+            "name": "Java",
+            "logo": "java.png",
+            "checked": true
+        },
+        {
+            "name": "Scss",
+            "logo": "scss.png",
+            "checked": true
+        },
+        {
+            "name": "Vue.js",
+            "logo": "vue.png",
+            "checked": true
+        },
+        {
+            "name": "MySQL",
+            "logo": "mysql.png",
+            "checked": true
+        },
+        {
+            "name": "React.js",
+            "logo": "react.png",
+            "checked": false
+        },
+        {
+            "name": "Docker",
+            "logo": "docker.png",
+            "checked": false
+        },
+        {
+            "name": "Webpack",
+            "logo": "webpack.png",
+            "checked": false
+        },
+        {
             "name": "Typescript",
             "logo": "ts.png",
+            "checked": false
+        },
+        {
+            "name": "Nest.js",
+            "logo": "nest.png",
+            "checked": false
+        },
+        {
+            "name": "MongoDB",
+            "logo": "mongodb.png",
+            "checked": false
+        },
+        {
+            "name": "GraphQL",
+            "logo": "graphql.png",
+            "checked": false
+        },
+        {
+            "name": "Dart",
+            "logo": "dart.png",
+            "checked": false
+        },
+        {
+            "name": "AWS",
+            "logo": "aws.png",
+            "checked": false
+        },
+        {
+            "name": "Ionic",
+            "logo": "ionic.png",
             "checked": false
         }
     ],

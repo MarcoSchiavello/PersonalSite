@@ -27,11 +27,12 @@
       <h1>Contact me</h1>
       
       <div class="contact-me__cont">
-        <BaseInputText label="Title" w="100%" />
-        <BaseTextArea label="Message" w="100%" h="10rem" />
-        <BaseButton text="Send" w="7rem" />
+        <BaseInputText label="Title" w="100%" v-model="mailTitle" />
+        <BaseTextArea label="Message" w="100%" h="10rem"  v-model="mailMsg" />
+        <BaseButton text="Send" w="7rem" @click="writeMsg" />
       </div>
-
+      
+      <h5 class="contact-me__alert">{{ alertPhrase }}</h5>
     </form>
 
   </main>
@@ -39,10 +40,12 @@
 
 <script>
 import BaseShadowImg from '@/components/BaseShadowImg.vue';
-import BaseInputText from'@/components/BaseInputText.vue';
-import BaseTextArea from'@/components/BaseTextArea.vue';  
-import BaseButton from'@/components/BaseButton.vue';  
-import ContactsLink from'@/components/ContactsLink.vue';
+import BaseInputText from '@/components/BaseInputText.vue';
+import BaseTextArea from '@/components/BaseTextArea.vue';  
+import BaseButton from '@/components/BaseButton.vue';  
+import ContactsLink from '@/components/ContactsLink.vue';
+
+import emailjs from 'emailjs-com';
 
 export default {
   name: 'Contacts',
@@ -53,6 +56,38 @@ export default {
     BaseButton,
     ContactsLink,
   },
+  data() {
+    return {
+      mailTitle: '',
+      mailMsg: '',
+      alertPhrase: ''
+    };
+  },
+  methods: {
+    writeMsg() {
+      if(this.mailTitle.trim() === '' || this.mailTitle.trim() === '') {
+        document.querySelector('.contact-me__alert').classList.add('contact-me__alert--failure');
+        this.alertPhrase = 'Title or body of the message is invalid';
+        return;
+      }
+
+      try {
+        emailjs.send('service_4oyvrw9', 'template_68f4r2s', {
+          mailTitle: this.mailTitle,
+          mailMsg:  this.mailMsg,
+        }, 'user_41Rv7ILWXHM3beAxcwCbV');
+
+        document.querySelector('.contact-me__alert').classList.add('contact-me__alert--success');
+        this.alertPhrase = 'Message sent successfuly';
+
+      } catch(error) {
+          document.querySelector('.contact-me__alert').classList.add('contact-me__alert--failure');
+          this.alertPhrase = 'Error while delivering the message';
+          console.log({error});
+      }
+      
+    }
+  }
 }
 </script>
 
@@ -116,6 +151,19 @@ export default {
   width: 90%;
   margin: 0 auto;
   max-width: var(--max-width);
+  
+  &__alert {
+    @include dimension(max-content, 0);
+    margin: 2rem auto;
+
+    &--success {
+      color: var(--clr-success);
+    }
+    
+    &--failure {
+      color: var(--clr-failure);
+    }
+  }
 
   &__cont {
     @include flex(center, space-between, column, 1rem);

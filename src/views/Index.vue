@@ -4,23 +4,22 @@
     
     <section class="section">
         <div class="section__cont">
-            <BaseShadowImg img="coverImg.jpg" desc="My foto" h=300 w=200 />
+            <BaseShadowImg img="profile.png" desc="My foto" h=300 w=200 />
         </div>
         <div class="section__cont section__cont--text">
             <h1 class="section__cont__title">About Me</h1>
             <hr class="section__cont__line">
             <p class="section__cont__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim
-              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex 
-              ea commodo consequat. Duis aute irure dolor in reprehenderit in orum.
+              I'm a 17 years old guy who really loves programming and learning new skills 
+              in the information technology field; more precisely I like a lot web development, 
+              which I'm always trying to get better at. I'm constantly looking for new and exciting technologies to learn.
             </p>
         </div>
     </section>
 
     <div class="techs">
       <h1 class="techs__title">Technologies & Programming languages</h1>
-      <p class="techs__desc">Here there are technologies that i have learned or i want to learn </p>
+      <p class="techs__desc">Here are the technologies that I have learned or I want to learn </p>
       <TechsList />
     </div>
 
