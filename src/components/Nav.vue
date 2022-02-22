@@ -25,7 +25,7 @@
             </g>
         </svg>
       </button>
-      <ul class="nav__hamburger__content">
+      <ul class="nav__hamburger__content" @click="switchHamburger">
         <li class="nav__hamburger__content__item"><router-link to="/">Home</router-link></li>
         <li class="nav__hamburger__content__item"><router-link to="/contacts">Contacts</router-link></li>
         <li class="nav__hamburger__content__item"><router-link to="/projects">Projects</router-link></li>
