@@ -20,6 +20,11 @@
             "checked": true
         },
         {
+            "name": "C",
+            "logo": "c.png",
+            "checked": true
+        },
+        {
             "name": "PHP",
             "logo": "php.png",
             "checked": true
@@ -102,6 +107,11 @@
     ],
 
     "projects": [
+        {
+            "name": "Certificavo",
+            "desc": "Webapp proposed by my school to create certificates for school's courses",
+            "github": "https://github.com/IIS-Avogadro-Torino/Certificavo"
+        },
         {
             "name": "Gusci",
             "desc": "fake eCommerce made for fun with PHP and MySql",

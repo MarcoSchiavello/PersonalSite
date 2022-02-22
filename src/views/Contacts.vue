@@ -79,11 +79,16 @@ export default {
 
         document.querySelector('.contact-me__alert').classList.add('contact-me__alert--success');
         this.alertPhrase = 'Message sent successfuly';
+        
+        this.mailTitle = '';
+        this.mailMsg = '';
 
       } catch(error) {
-          document.querySelector('.contact-me__alert').classList.add('contact-me__alert--failure');
-          this.alertPhrase = 'Error while delivering the message';
-          console.log({error});
+
+        document.querySelector('.contact-me__alert').classList.add('contact-me__alert--failure');
+        this.alertPhrase = 'Error while delivering the message';
+        console.log({error});
+        
       }
       
     }
