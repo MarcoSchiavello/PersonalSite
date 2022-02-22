@@ -1,6 +1,6 @@
 <template>
     <ul class="techs-list">
-        <TechsListItem v-for="tech in techs" :key="tech.name" :name="tech.name" :logo="tech.logo" :checked="tech.checked" />
+        <TechsListItem v-for="tech in techs" :key="tech.name" :name="tech.name" :logo="tech.logo" :level="tech.level" />
     </ul>
 </template>
 
@@ -24,7 +24,11 @@ export default {
 
 <style lang="scss" scoped>
 .techs-list {
-    @include flex(center, null, column, 0.8rem);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));
+    row-gap: 1rem;
+    align-content: center;
+    justify-items: center;
     padding: 0;
 }
 </style>

@@ -7,27 +7,33 @@
         </div>
         <img :src="require('@/assets/techsLogos/' + logo)" alt="logo of the technologies" class="techs-list-item__logo">
         <p class="techs-list-item__name">{{ name }}</p>
+        <TechsListItemLevelBar :level="level" />
     </li>
 </template>
 
 <script>
+import TechsListItemLevelBar from "@/components/TechsListItemLevelBar.vue";
+
 export default {
     name: 'TechsListItem',
     props: {
         name: String,
         logo: String,
-        checked: Boolean,    
+        level: Number,    
+    },
+    components: {
+        TechsListItemLevelBar
     }
 }
 </script>
 
 <style lang="scss" scoped>
 .techs-list-item {
-    @include flex(center, null, row, 0.7rem);
+    @include flex(center, null, column, 0.7rem);
     @include boxShadow;
     width: 93%;
     min-height: 3.9rem;
-    padding: 0.5rem 0.8rem;
+    padding: 1.3rem 0.5rem;
     border-radius: 0.4rem;
     box-sizing: border-box;
 
@@ -37,6 +43,8 @@ export default {
         border: solid 1px var(--secondary);
         border-radius: 0.3rem;
         color: var(--secondary);
+        display: none;
+
 
         & path {
             stroke: var(--secondary);
@@ -45,11 +53,11 @@ export default {
 
     &__logo {
         display: block;
-        width: 2.6rem;
+        height: 3.6rem;
     }
 
     &__name {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
         margin: 0;
     }
 }

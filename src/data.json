@@ -7,102 +7,102 @@
         {
             "name": "Node.js",
             "logo": "node.png",
-            "checked": true
+            "level": 2
         },
         {
             "name": "Express.js",
             "logo": "express.png",
-            "checked": true
+            "level": 2
         },
         {
             "name": "Git",
             "logo": "git.png",
-            "checked": true
+            "level": 2
         },
         {
             "name": "C",
             "logo": "c.png",
-            "checked": true
+            "level": 1
         },
         {
             "name": "PHP",
             "logo": "php.png",
-            "checked": true
+            "level": 2
         },
         {
             "name": "JavaScript",
             "logo": "javascript.png",
-            "checked": true
+            "level": 2
         },
         {
             "name": "Java",
             "logo": "java.png",
-            "checked": true
+            "level": 2
         },
         {
             "name": "Scss",
             "logo": "scss.png",
-            "checked": true
+            "level": 1
         },
         {
             "name": "Vue.js",
             "logo": "vue.png",
-            "checked": true
+            "level": 1
         },
         {
             "name": "MySQL",
             "logo": "mysql.png",
-            "checked": true
+            "level": 1
         },
         {
             "name": "React.js",
             "logo": "react.png",
-            "checked": false
+            "level": 0
         },
         {
             "name": "Docker",
             "logo": "docker.png",
-            "checked": false
+            "level": 0
         },
         {
             "name": "Webpack",
             "logo": "webpack.png",
-            "checked": false
+            "level": 0
         },
         {
             "name": "Typescript",
             "logo": "ts.png",
-            "checked": false
+            "level": 0
         },
         {
             "name": "Nest.js",
             "logo": "nest.png",
-            "checked": false
+            "level": 0
         },
         {
             "name": "MongoDB",
             "logo": "mongodb.png",
-            "checked": false
+            "level": 0
         },
         {
             "name": "GraphQL",
             "logo": "graphql.png",
-            "checked": false
+            "level": 0
         },
         {
             "name": "Dart",
             "logo": "dart.png",
-            "checked": false
+            "level": 0
         },
         {
             "name": "AWS",
             "logo": "aws.png",
-            "checked": false
+            "level": 0
         },
         {
             "name": "Ionic",
             "logo": "ionic.png",
-            "checked": false
+            "level": 0
         }
     ],
 
