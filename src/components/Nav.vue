@@ -1,6 +1,6 @@
 <template>
   <nav class="nav">
-    <div class="nav__logo">
+    <div class="nav__logo" @click="backToHome">
       <h1 class="nav__logo__text">Marco Schiavello</h1>
       <hr class="nav__logo__line" />
       <h5 class="nav__logo__subtext">personal site</h5>
@@ -43,6 +43,9 @@ export default {
     switchHamburger() {
       document.querySelector('.nav__hamburger__content').classList.toggle('nav__hamburger__content--on');
       document.querySelector('.nav__hamburger__btn__svg').classList.toggle('nav__hamburger__btn__svg--rotare');
+    },
+    backToHome() {
+      this.$router.push('/');
     }
   },
 };
@@ -62,6 +65,7 @@ export default {
     display: flex;
     position: relative;
     gap: 0.6em;
+    cursor: pointer;
 
     &__text {
       font-size: 1.2em;
