@@ -57,12 +57,27 @@
         {
             "name": "React.js",
             "logo": "react.png",
-            "level": 0
+            "level": 1
         },
         {
             "name": "Docker",
             "logo": "docker.png",
-            "level": 0
+            "level": 1
+        },
+        {
+            "name": "Dart",
+            "logo": "dart.png",
+            "level": 1
+        },
+        {
+            "name": "Flutter",
+            "logo": "flutter.png",
+            "level": 1
+        },
+        {
+            "name": "Haskell",
+            "logo": "haskell.png",
+            "level": 1
         },
         {
             "name": "Webpack",
@@ -87,11 +102,6 @@
         {
             "name": "GraphQL",
             "logo": "graphql.png",
-            "level": 0
-        },
-        {
-            "name": "Dart",
-            "logo": "dart.png",
             "level": 0
         },
         {
@@ -121,6 +131,20 @@
             "name": "Trackstry",
             "desc": "spotify clone  made with Node.js and Express.js",
             "github": "https://github.com/MarcoSchiavello/Trackstry"
+        },
+        {
+            "name": "Dermoprogram",
+            "desc": "site to manage patients and their visits in a medical office"
+        },
+        {
+            "name": "Tic-tac-toe-webApp",
+            "desc": "the Tic-tac-toe game with AI ported into a web app for the school presentation day",
+            "github": "https://github.com/MarcoSchiavello/Tic-tac-toe-webApp"
+        },
+        {
+            "name": "Tic-Tac-Toe-Minimax",
+            "desc": "the Tic-tac-toe game implemented with an AI based on the minimax algorithm",
+            "github": "https://github.com/MarcoSchiavello/Tic-Tac-Toe-Minimax"
         }
     ]
 }
