@@ -3,30 +3,18 @@
 ![GitHub commit activity (master)](https://img.shields.io/github/commit-activity/t/MarcoSchiavello/PersonalSite?color=orange)
 ![GitLab stars](https://img.shields.io/github/stars/MarcoSchiavello/PersonalSite?color=purple)
 
-<h1 align="center" text-allign="center"><img src="#" style="width: 50px" /> Personal site</h1> 
-# 
+<h1 align="center" text-allign="center"><img src="https://github.com/MarcoSchiavello/PersonalSite/blob/main/public/logo.svg" style="width: 50px" /> Personal site</h1> 
+It's a personal site created to showcase my skills alongside my passion and personality, and it also serves as a portfolio for my past works and future ones.
 
-My personal site
+## Tech-stack
+- Vue.js
+- Sass
+- HTML
 
-## Project setup
+## Install
 ```
 npm install
 ```
-
-### Compiles and hot-reloads for development
 ```
 npm run serve
 ```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
