@@ -20,11 +20,6 @@
             "level": 2
         },
         {
-            "name": "C",
-            "logo": "c.png",
-            "level": 1
-        },
-        {
             "name": "PHP",
             "logo": "php.png",
             "level": 2
@@ -37,6 +32,11 @@
         {
             "name": "Java",
             "logo": "java.png",
+            "level": 2
+        },
+        {
+            "name":"C",
+            "logo": "c.png",
             "level": 2
         },
         {
@@ -78,43 +78,13 @@
             "name": "Haskell",
             "logo": "haskell.png",
             "level": 1
-        },
-        {
-            "name": "Webpack",
-            "logo": "webpack.png",
-            "level": 0
-        },
-        {
-            "name": "Typescript",
-            "logo": "ts.png",
-            "level": 0
-        },
-        {
-            "name": "Nest.js",
-            "logo": "nest.png",
-            "level": 0
-        },
+        }, 
         {
             "name": "MongoDB",
             "logo": "mongodb.png",
-            "level": 0
-        },
-        {
-            "name": "GraphQL",
-            "logo": "graphql.png",
-            "level": 0
-        },
-        {
-            "name": "AWS",
-            "logo": "aws.png",
-            "level": 0
-        },
-        {
-            "name": "Ionic",
-            "logo": "ionic.png",
-            "level": 0
+            "level": 1
         }
-    ],
+        ],
 
     "projects": [
         {

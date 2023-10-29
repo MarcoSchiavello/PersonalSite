@@ -17,9 +17,7 @@ export default {
         level: Number
     },
     data() {
-        let levelDesc = '';
-
-        console.log(this.level);
+        let levelDesc = ''
 
         switch(this.level) {
             case 0:

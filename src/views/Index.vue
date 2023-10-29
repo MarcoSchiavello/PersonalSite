@@ -10,7 +10,7 @@
             <h1 class="section__cont__title">About Me</h1>
             <hr class="section__cont__line">
             <p class="section__cont__text">
-              I'm a 18 years old guy who really loves programming and learning new skills 
+              I'm a {{ age() }} years old guy who really loves programming and learning new skills 
               in the information technology field; more precisely I like a lot web development, 
               which I'm always trying to get better at. I'm constantly looking for new and exciting technologies to learn.
             </p>
@@ -37,6 +37,13 @@ export default {
     Cover,
     BaseShadowImg,
     TechsList,
+  },
+  methods: {
+    age() {
+      let diff = (new Date()) - (new Date('June 3, 2004 00:00:00'));
+      let ageDate = new Date(diff); // miliseconds from epoch
+      return Math.abs(ageDate.getUTCFullYear() - 1970);
+    }
   }
 }
 </script>
