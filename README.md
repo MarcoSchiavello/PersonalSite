@@ -1,5 +1,4 @@
 ![Static Badge](https://img.shields.io/badge/Version-1.0.0-blue)
-![Static Badge](https://img.shields.io/badge/Licence-GPL_3.0-yallow)
 ![GitHub commit activity (master)](https://img.shields.io/github/commit-activity/t/MarcoSchiavello/PersonalSite?color=orange)
 ![GitLab stars](https://img.shields.io/github/stars/MarcoSchiavello/PersonalSite?color=purple)
 
